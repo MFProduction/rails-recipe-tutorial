@@ -15,7 +15,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'bcrypt', '~> 3.1.7'
 # gem 'unicorn'
 # gem 'capistrano-rails', group: :development
-
+# gem for uploading images
+gem 'carrierwave', '0.10.0'
+gem 'mini_magick', '3.8.0'
 group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'
@@ -24,7 +26,7 @@ group :development, :test do
   gem 'pry'
   
 
-  end
+end
   
 group :production do
     gem 'pg'
