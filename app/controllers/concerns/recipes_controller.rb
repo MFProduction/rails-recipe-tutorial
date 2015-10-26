@@ -41,6 +41,19 @@ class RecipesController < ApplicationController
       render :edit
     end 
   end
+
+  def like
+    @recipe = Recipe.find(params[:id])
+    Like.create(like: params[:like], chef: Chef.first, recipe: @recipe)
+   # if like.save?
+      flash[:success] = "Your like was added succesfully"
+      redirect_to recipe_path(@recipe)
+    #else 
+    #  flash[:danger] = "Your like was no added succesfully"
+    #  render :back
+   # end
+  end
+
   
   private 
     def recipe_params
