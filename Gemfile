@@ -12,12 +12,15 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
 # gem 'unicorn'
 # gem 'capistrano-rails', group: :development
 # gem for uploading images
 gem 'carrierwave', '0.10.0'
 gem 'mini_magick', '3.8.0'
+gem 'will_paginate', '~> 3.0.6'
+gem 'bootstrap-will_paginate'
+
 group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'
