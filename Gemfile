@@ -27,7 +27,7 @@ group :development, :test do
   gem 'spring'
   gem 'sqlite3'
   gem 'pry'
-  gem 'fog'
+  gem 'fog', '1.23.0'
   
 
 end
