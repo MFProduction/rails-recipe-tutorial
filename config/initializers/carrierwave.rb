@@ -6,7 +6,7 @@ if Rails.env.production?
 			:provider              => 'AWS',
 			:aws_access_key_id     => ENV['S3_ACCESS_KEY'],
 			:aws_secret_access_key => ENV['S3_SECRET_KEY'],
-			:region                => 's3-eu-west-1.amazonaws.com' # not Ireland
+			:region                => 'eu-west-1' # not Ireland
 		}
 		config.fog_directory = ENV['S3_BUCKET']
 	end
