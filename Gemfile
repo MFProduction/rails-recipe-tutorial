@@ -26,16 +26,13 @@ group :development, :test do
   gem 'web-console', '~> 2.0'
   gem 'spring'
   gem 'sqlite3'
-  gem 'pry'
-  gem 'fog', '1.23.0'
-  gem "fog-aws"
-  
+  gem 'pry'  
 
 end
   
 group :production do
     gem 'pg'
     gem 'rails_12factor'
-
+    gem 'fog', '1.23.0'
 end
 
