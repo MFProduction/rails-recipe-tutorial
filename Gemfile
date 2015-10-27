@@ -28,6 +28,7 @@ group :development, :test do
   gem 'sqlite3'
   gem 'pry'
   gem 'fog', '1.23.0'
+  gem "fog-aws"
   
 
 end
