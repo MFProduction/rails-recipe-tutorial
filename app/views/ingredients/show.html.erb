@@ -1,4 +1,4 @@
-<%= render "shared/page_title", title: "All Recipes" %>
+<%= render "shared/page_title", title: "Ingredient: "+ @ing.name %>
 
 <ul class="nav nav-tabs">
   <li class="active">
@@ -9,9 +9,9 @@
   </li>
 </ul>
 <div class="center">
-<%= will_paginate %>
+<%= will_paginate @recipes %>
 </div>
-<% @recipes.each do |recipe|  %>
+<% @ing.recipes.each do |recipe|  %>
   <div class="row">
     <div class="col-md-2">
       <section class="chef_info center">
@@ -51,5 +51,5 @@
   <hr>
 <% end %>
 <div class="center">
-<%= will_paginate %>
+<%= will_paginate @recipes %>
 </div>

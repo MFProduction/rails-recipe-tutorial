@@ -16,6 +16,8 @@
     </div>
     <div class="well">
       <p>
+      <p><%= render @recipe.styles %></p>
+      <p><%= render @recipe.ingredients %></p>
         <strong>Steps:</strong>
       </p>
       <%= simple_format(@recipe.description) %>
