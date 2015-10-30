@@ -89,6 +89,9 @@ input, textarea, slelect, .uneditable-input {
 .input {
   height: auto !important;
 }
+.input_checkbox input {
+  width: auto !important;
+}
 
 span.picture {
   margin-top: 10px;
@@ -117,3 +120,4 @@ span.picture {
   padding-left: 10px;
   #padding: 0;
 }
+
